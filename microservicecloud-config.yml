@@ -1,0 +1,26 @@
+﻿spring:
+    profiles:
+        active:
+        - dev
+---
+server:
+    prot: 8201
+spring:
+    profiles: dev
+    application:
+        name: micorservicecould-config-client
+eureka:
+    client:
+        service-url:
+            defaultZone: heep://eureka-dev.com:7001/eureka/
+---
+server:
+    prot: 8202
+spring:
+    profiles: test
+    application:
+        name: micorservicecould-config-client
+eureka:
+    client:
+        service-url:
+            defaultZone: heep://eureka-test.com:7001/eureka/
