@@ -17,8 +17,8 @@ spring:
         name : microservicecloud-config-dept-client
     datasource:
             
-type: com.alibaba.druid. poo1.DruidDataSource
-            driver-class-name: org.gjt. mm. mysql. Driver
+type: com.alibaba.druid.pool.DruidDataSource
+            driver-class-name: com.mysql.cj.jdbc.Driver
             url:  jdbc : mysql:// localhost: 3306/test?serverTimezone=UTC
             username : root
             
